@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athira's Portfolio - Portfolio</title>
+    <link rel="stylesheet" href="port.css">
+    <script src="https://kit.fontawesome.com/a8b79fb24e.js" crossorigin="anonymous"></script>
+    <script>
+        function redirectToGitHub(url) {
+            window.open(url, '_blank');
+        }
+
+        function showMoreProjects() {
+            document.getElementById("extra-projects").style.display = "block";
+            document.getElementById("see-more-btn").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="melogo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#about" onclick="opentab('about', event)">About</a></li>
+                    <li><a href="#Skills" onclick="opentab('Skills', event)">Skills</a></li>
+                    <li><a href="#projects" onclick="opentab('projects', event)">Projects</a></li>
+                    <li><a href="#contact" onclick="opentab('contact', event)">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>CS Undergraduate <br>Front end Developer</p>
+                <h1>Hi, I'm <span>Anil Jyothi Athira</span></h1>
+                
+            </div>
+            
+        </div>
+    </div>
+    <!-----------------about---------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="https://media.istockphoto.com/id/1387035426/photo/close-up-photo-of-woman-hands-using-laptop-computer-in-the-office.webp?b=1&s=170667a&w=0&k=20&c=kpllWjY7TsTlDW3HmXixvyHDIvM9eC_KvbD2_yew8YM=">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hello! I'm an enthusiastic Computer Science undergraduate and front-end web designer passionate about exploring the intersection of technology and creativity. Currently, I'm immersed in various machine learning projects, constantly seeking to expand my skills and knowledge in this dynamic field. I actively participate in hackathons and coding contests, where I thrive in collaborative environments and enjoy the challenge of solving complex problems under pressure. My portfolio showcases my journey through these projects, highlighting my dedication to crafting innovative solutions and pushing the boundaries of what's possible in web development and computer vision using machine learning.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education', event)">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Web Designing</span><br>HTML  CSS  JavaScript</li>
+                            <li><span>Programming Languages</span><br>Java  Python  C</li>
+                            <li><span>Professional Skills</span><br>Strong organizational,time-management skills, communication, multitasking.</li>
+                            <li><span>Machine Learning</span><br>TensorFlow, Keras, Scikit-learn</li>
+                            <li><span>Data Analysis</span><br>Pandas, NumPy, Matplotlib, Microsoft Power BI</li>
+                            <li><span>Database Management</span><br>Oracle, MySQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Current</span><br>Member of Data Science Visionary hub</li>
+                            <li><span>Oct 2024</span><br>Open Source Contributer-GSSOC Extendend</li>
+                            <li><span>2023 and 2024</span><br>Smart India Hackathon participant</li>
+                            <li><span>Nov-Dec(2023)</span><br>Web Designer intern at Oasis infobyte</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2022-current</span><br>CS Undergrad At BVRITN</li>
+                            <li><span>2020-2022</span><br>Secondary Education</li>
+                            <li><span>2019-2020</span><br>High School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------services------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Designing and Machine learning</h2>
+                    <p>I craft visually stunning, user-centric websites, leveraging cutting-edge technologies and machine learning expertise to elevate your online presence and drive business success.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-computer"></i>
+                    <h2>Software development</h2>
+                    <p>As a software developer, I offer custom software solutions tailored to your needs, with expertise in programming languages like Java and Python for robust and efficient applications.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2>Tech Stack Expertise</h2>
+                    <p>I offer comprehensive services covering Excel, Word, Git, ML, and AI, providing seamless solutions for your data-driven needs.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <!-- Existing project items -->
+                <div class="work">
+                    <img src="https://us.123rf.com/450wm/tarikvision/tarikvision2305/tarikvision230500130/209018586-3d-isometric-flat-vector-conceptual-illustration-of-larva-migrans-ascaris-lumbricoides.jpg?ver=6" alt="Diabetic Foot Ulcers Detection">
+                    <div class="layer">
+                        <h3>Early Detection of Diabetic Foot Ulcers using Computer Vision</h3>
+                        <p>Built a high-accuracy DFU classification system with TensorFlow/Keras, using EfficientNetB3 and InceptionResNetV2 models.</p>
+                        <a href="#" onclick="redirectToGitHub('https://github.com/AJ-Athira/Prediction-of-Diabetic-Foot-Ulcer-Detection.git')"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://static.vecteezy.com/system/resources/previews/010/704/338/original/hotel-booking-concept-in-flat-design-free-vector.jpg" alt="Hotel Management">
+                    <div class="layer">
+                        <h3>Hotel Management</h3>
+                        <p>I have created a sleek hotel management website with HTML, CSS, and JavaScript for intuitive navigation and seamless user experience.</p>
+                        <a href="#" onclick="redirectToGitHub('https://github.com/AJ-Athira/Hotel-Management-application.git')"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://media.istockphoto.com/id/1289388662/vector/ocr-optical-character-recognition-acronym-business-concept.jpg?s=612x612&w=0&k=20&c=UW-TnHY12q3ESaijZ7dLra2VYNy-akz3p3u-wOzi6qs=" alt="OCR Web App">
+                    <div class="layer">
+                        <h3>OCR Web App</h3>
+                        <p>Developed a robust OCR web application using advanced character recognition algorithms to extract text from images, deployed on Streamlit, and available live for users.</p>
+                        <a href="#" onclick="redirectToGitHub('https://github.com/AJ-Athira/ocr_web_app')"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="extra-projects">
+                <div class="work">
+                    <img src="https://qph.cf2.quoracdn.net/main-qimg-fe25615a9b0597d8225b0e850fe5d8c9" alt="Movie Ticket Booking">
+                    <div class="layer">
+                        <h3>Movie Ticket Booking</h3>
+                        <p>I developed an efficient movie ticket booking system using data structures in C for seamless performance and user experience.</p>
+                        <a href="#" onclick="redirectToGitHub('https://github.com/AJ-Athira/DataStructuresProject.git')"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4HMJa1WMtHwvMEo8LWGBSjuwINDbL6tsXezvM7nZKGN39LKL1dHLb4vRVJzIgCivdRpA&usqp=CAU" alt="Avengers Movie Playlist">
+                    <div class="layer">
+                        <h3>Avengers Movie Playlist</h3>
+                        <p>Boom! Check out the Avengers movie playlist, crafted with HTML and CSS. Try it.</p>
+                        <a href="#" onclick="redirectToGitHub('https://github.com/AJ-Athira/project-HTML-avengers.git')"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxm9Jh7CwzmLnKP09jq3ii8lXj9zNpMgBW2A&s" alt="Unit Converter">
+                    <div class="layer">
+                        <h3>Unit Converter</h3>
+                        <p>Developed a unit converter program in C for various measurement systems (e.g., temperature, distance), allowing users to convert between units.</p>
+                        <a href="#" onclick="redirectToGitHub('https://github.com/AJ-Athira/final_C_project')"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            <button id="see-more-btn" class="btn" onclick="showMoreProjects()">See More</button>
+            <button id="see-less-btn" class="btn" onclick="showLessProjects()">See Less</button>
+        </div>
+    </div>
+    <script>
+        function showMoreProjects() {
+            document.getElementById("extra-projects").style.display = "grid";
+            document.getElementById("see-more-btn").style.display = "none";
+            document.getElementById("see-less-btn").style.display = "block";
+        }
+
+        function showLessProjects() {
+            document.getElementById("extra-projects").style.display = "none";
+            document.getElementById("see-more-btn").style.display = "block";
+            document.getElementById("see-less-btn").style.display = "none";
+        }
+
+        function redirectToGitHub(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+    <!----------------contact------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>ajathira1294@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 9398339679</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/_aj_athira_1294?igsh=MWRlemZxOWtsYzlnMA=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/anil-jyothi-athira-640302256"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/AJ-Athira"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1cUq6s2b8kCWTFMcbbcX51LMONaxoSLoG/view?usp=sharing" class="btn btn2">Explore my Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Athira. Made with <i class="fas fa-heart"></i> passion</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname, event) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
